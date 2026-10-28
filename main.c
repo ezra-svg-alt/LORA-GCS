@@ -42,9 +42,9 @@
    Air rate makin tinggi = telemetri makin lancar, tapi jangkauan makin pendek. */
 #define E32_ADDH    0x00
 #define E32_ADDL    0x00
-#define E32_SPED    (0x30 | 0x05)   /* UART 8N1 57600 bps, air rate 9.6 kbps */
+#define E32_SPED    (0x30 | 0x04)   /* HARUS sama dengan AIR: UART 57600, air rate 9.6 kbps */
 #define E32_CHAN    0x17            /* 410 + 0x17 = 433 MHz */
-#define E32_OPTION  0x40            /* transparan, push-pull, FEC on, daya 30 dBm (1 W) */
+#define E32_OPTION  0x44            /* HARUS sama dengan AIR */
 #define E32_UART_BAUD  57600        /* harus sesuai bit baud di E32_SPED */
 
 #define E32_BURST     58    /* maks. byte per kiriman ke E32 (= 1 sub-paket radio) */
